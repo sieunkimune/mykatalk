@@ -1,13 +1,151 @@
 <!DOCTYPE html>
 <html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>마이카톡</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
 
-<head>
-  <meta charset="UTF-8">
-  <title></title>
-</head>
+	<body>
+		<div id="wrap">
+			<h1 class="sr-only">마이 카카오톡</h1>
 
-<body>
+			<header>
+				<nav>
+					<div>
+						<p><i class="fa-solid fa-signal"></i></p>
+						<p>SKT</p>
+						<p><i class="fa-solid fa-wifi"></i></p>
+					</div>
+					<ul>
+						<li>오후 13:02</li>
+						<li>70% <i class="fa-solid fa-battery-three-quarters"></i></li>
+					</ul>
+				</nav>
+			</header>
+			<section>
+				<nav>
+					<div>
+						<p>채팅</p>
+						<p><a href="#">오픈채팅</a></p>
+					</div>
+					<ol>
+						<li>
+							<a href="#">
+								<span class="sr-only">친구찾기</span>
+								<i class="fa-solid fa-magnifying-glass"></i
+							></a>
+						</li>
+						<li>
+							<a href="#"
+								><span class="sr-only">채팅</span> <i class="fa-regular fa-comment"></i
+							></a>
+						</li>
+						<li>
+							<a href="#"><span class="sr-only">설정</span> <i class="fa-solid fa-gear"></i></a>
+						</li>
+					</ol>
+				</nav>
 
-</body>
+				<h2 class="sr-only">채팅목록</h2>
+				<ul class="talkroom">
+					<li>
+						<a href="./talk1.html">
+							<div class="friend">
+								<img src="./images/friend.kitty.png" alt="키티상담사" />
+							</div>
+							<div class="info">
+								<h3>쿠팡 '키티' 상담원</h3>
+								<p>고객님 죄송합니다.</p>
+							</div>
+							<div class="talktime">
+								<time datetime="2023-08-25">오전 10:07</time>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="./talk2.html">
+							<div class="friend">
+								<img src="./images/friend.subagi.png" alt="수박" />
+							</div>
+							<div class="info">
+								<h3>수박이</h3>
+								<p>누나 어제 내 방 들어옴?</p>
+							</div>
+							<div class="talktime">
+								<time datetime="2023-08-24">어제</time>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="./talk3.html">
+							<div class="friend">
+								<img src="./images/friend.chie.png" alt="치이카와 부장님" />
+							</div>
+							<div class="info">
+								<h3>치이카와 부장님</h3>
+								<p>시은씨 똑바로 하세요.</p>
+							</div>
+							<div class="talktime">
+								<time datetime="2023-08-08">8월 8일</time>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="./talk4.html">
+							<div class="friend">
+								<img src="./images/friend_cloud.jpg" alt="구름" />
+							</div>
+							<div class="info">
+								<h3>거래처 구부장</h3>
+								<p>예 ...</p>
+							</div>
+							<div class="talktime">
+								<time datetime="2023-07-14">7월 14일</time>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</section>
+			<footer>
+				<nav>
+					<ol>
+						<li>
+							<a href="#">
+								<span class="sr-only">친구들</span>
+								<i class="fa-regular fa-user"></i
+							></a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="sr-only">채팅</span>
+								<i class="fa-solid fa-comment"></i>
+								<span class="redone">1</span></a
+							>
+						</li>
+						<li>
+							<a href="#">
+								<span class="sr-only">찾기</span>
+								<i class="fa-solid fa-magnifying-glass"></i
+							></a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="sr-only">더보기</span>
+								<i class="fa-solid fa-ellipsis"></i
+							></a>
+						</li>
+					</ol>
+				</nav>
+			</footer>
+		</div>
 
+		<h2>브라우저의 가로폭을 550이하로 줄여주세요</h2>
+	</body>
 </html>

@@ -1,0 +1,158 @@
+@import url(./reset.css);
+@media screen and (min-width: 550px) {
+  body {
+    background-color: #ffd700;
+  }
+}
+
+#wrap {
+  width: 100%;
+}
+@media screen and (min-width: 550px) {
+  #wrap {
+    display: none;
+  }
+}
+#wrap > header > nav {
+  display: flex;
+  justify-content: space-between;
+  height: 33px;
+  padding: 0 10px;
+  line-height: 33px;
+}
+#wrap > header > nav > div {
+  display: flex;
+}
+#wrap > header > nav > div > p {
+  font-size: 16px;
+}
+#wrap > header > nav > div > p:nth-of-type(2) {
+  margin: 0 4px;
+}
+#wrap > header > nav > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 255px;
+}
+#wrap > header > nav > ul > li {
+  font-size: 15px;
+}
+#wrap > section {
+  margin-top: 10px;
+}
+#wrap > section > nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+#wrap > section > nav > div {
+  display: flex;
+}
+#wrap > section > nav > div > p {
+  height: 60px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 60px;
+}
+#wrap > section > nav > div > p > a {
+  display: block;
+  height: 60px;
+  padding-left: 15px;
+  color: #ccc;
+  line-height: 60px;
+  text-align: center;
+}
+#wrap > section > nav > ol {
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+  font-weight: 500;
+  font-size: 24px;
+}
+#wrap > section > nav > ol > li {
+  height: 60px;
+  line-height: 60px;
+}
+#wrap > section > nav > ol > li > a {
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+#wrap > section > nav > ol > li:last-child:hover > a {
+  color: #f00;
+}
+#wrap > section > ul {
+  margin-top: 40px;
+}
+#wrap > section > ul > li > a {
+  display: flex;
+}
+#wrap > section > ul > li > a > .friend > img {
+  width: 65px;
+  height: 65px;
+  border-radius: 20px;
+}
+#wrap > section > ul > li > a > .info {
+  display: flex;
+  flex-direction: column;
+}
+#wrap > footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+#wrap > footer > nav {
+  background-color: #fafafa;
+  border-top: 1px solid #ccc;
+}
+#wrap > footer > nav > ol {
+  display: flex;
+  justify-content: space-between;
+}
+#wrap > footer > nav > ol > li {
+  width: 100%;
+}
+#wrap > footer > nav > ol > li > a {
+  position: relative;
+  display: block;
+  height: 75px;
+  font-size: 28px;
+  line-height: 75px;
+  text-align: center;
+}
+#wrap > footer > nav > ol > li > a:hover > i {
+  color: #f66;
+}
+#wrap > footer > nav > ol > li > a > .redone {
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  width: 17px;
+  height: 17px;
+  margin-left: 5px;
+  color: #fff;
+  font-weight: 800;
+  font-size: 10px;
+  line-height: 17px;
+  border-radius: 50%;
+  background-color: #f00;
+}
+
+h2 {
+  display: none;
+}
+@media screen and (min-width: 550px) {
+  h2 {
+    display: inline-block;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 600px;
+    font-weight: 400;
+    font-size: 33px;
+    transform: translate(-50%, -50%);
+  }
+}/*# sourceMappingURL=style.css.map */
