@@ -83,26 +83,89 @@
 #wrap > section > nav > ol > li:last-child:hover > a {
   color: #f00;
 }
-#wrap > section > ul {
+#wrap > section > .talkroom {
   margin-top: 40px;
 }
-#wrap > section > ul > li > a {
+#wrap > section > .talkroom > li > a {
   display: flex;
+  height: 65px;
+  margin: 15px 20px;
 }
-#wrap > section > ul > li > a > .friend > img {
+#wrap > section > .talkroom > li > a:hover {
+  background-color: #fefbe3;
+}
+#wrap > section > .talkroom > li > a > .friend > img {
   width: 65px;
   height: 65px;
   border-radius: 20px;
 }
-#wrap > section > ul > li > a > .info {
+#wrap > section > .talkroom > li > a > .info {
   display: flex;
   flex-direction: column;
+  margin-left: 10px;
+}
+#wrap > section > .talkroom > li > a > .info > h3 {
+  margin-top: 8px;
+}
+#wrap > section > .talkroom > li > a > .info > p {
+  margin-top: 5px;
+  color: #9999b3;
+}
+#wrap > section > .talkroom > li > a > .talktime {
+  position: absolute;
+  right: 25px;
+  margin-top: 24px;
+  color: #9999b3;
+  font-size: 12px;
+}
+#wrap > section > .talkroom > li > a > span {
+  position: absolute;
+  left: 50%;
+  margin-top: 45px;
+  margin-left: 197px;
+  width: 18px;
+  height: 18px;
+  color: #fff;
+  line-height: 18px;
+  text-align: center;
+  font-size: 13px;
+  border-radius: 50%;
+  background-color: #f00;
+}
+#wrap > .settings {
+  background-color: yellow;
+}
+#wrap > .settings > nav > div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+#wrap > .settings > nav > div > p > a {
+  display: block;
+  color: #000;
+}
+#wrap > .settings > nav > div > p > a:first-child {
+  font-weight: 500;
+  font-size: 20px;
+}
+#wrap > .settings > nav > div > p:first-child:hover > a {
+  color: #ffd700;
+}
+@keyframes footerAni {
+  from {
+    transform: translateY(80px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 #wrap > footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
+  transform: translateY(80px);
+  animation: footerAni 0.5s ease-out forwards 0.5s;
 }
 #wrap > footer > nav {
   background-color: #fafafa;

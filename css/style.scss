@@ -49,6 +49,7 @@ body {
 
 	> section {
 		margin-top: 10px;
+
 		> nav {
 			display: flex;
 			justify-content: space-between;
@@ -95,11 +96,17 @@ body {
 			} //end of ol
 		} //end of nav
 
-		> ul {
+		> .talkroom {
 			margin-top: 40px;
 			> li {
 				> a {
 					display: flex;
+					height: 65px;
+					margin: 15px 20px;
+
+					&:hover {
+						background-color: #fefbe3;
+					}
 					> .friend {
 						> img {
 							width: 65px;
@@ -111,17 +118,83 @@ body {
 					> .info {
 						display: flex;
 						flex-direction: column;
+						margin-left: 10px;
+						> h3 {
+							margin-top: 8px;
+						}
+						> p {
+							margin-top: 5px;
+							color: #9999b3;
+						}
+					} //end of .info
+
+					> .talktime {
+						position: absolute;
+						right: 25px;
+						margin-top: 24px;
+						color: #9999b3;
+						font-size: 12px;
+					}
+					> span {
+						position: absolute;
+						left: 50%;
+						margin-top: 45px;
+						margin-left: 197px;
+						width: 18px;
+						height: 18px;
+						color: #fff;
+						line-height: 18px;
+						text-align: center;
+						font-size: 13px;
+						border-radius: 50%;
+						background-color: #f00;
+					}
+				} //end of a
+			} //end of li
+		} //end of .talkroom
+	} //end of section
+
+	> .settings {
+		background-color: yellow;
+		> nav {
+			> div {
+				display: flex;
+				justify-content: space-between;
+				width: 100%;
+				> p {
+					> a {
+						display: block;
+						color: #000;
+
+						&:first-child {
+							font-weight: 500;
+							font-size: 20px;
+						}
+					}
+					&:first-child:hover > a {
+						color: #ffd700;
 					}
 				}
 			}
 		}
-	} //end of section
+	}
 
+	@keyframes footerAni {
+		from {
+			transform: translateY(80px);
+		}
+		to {
+			transform: translateY(0);
+		}
+	}
 	> footer {
 		position: fixed;
 		left: 0;
 		bottom: 0;
 		width: 100%;
+		transform: translateY(80px);
+		animation: footerAni 0.5s ease-out forwards 0.5s;
+
 		> nav {
 			background-color: #fafafa;
 			border-top: 1px solid #ccc;
