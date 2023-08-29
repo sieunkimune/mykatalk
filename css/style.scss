@@ -155,12 +155,13 @@ body {
 	} //end of section
 
 	> .settings {
-		background-color: yellow;
 		> nav {
+			padding: 0;
 			> div {
 				display: flex;
 				justify-content: space-between;
 				width: 100%;
+				margin-right: 10px;
 				> p {
 					> a {
 						display: block;
@@ -174,10 +175,78 @@ body {
 					&:first-child:hover > a {
 						color: #ffd700;
 					}
+					&:last-child {
+						padding-right: 10px;
+					}
 				}
 			}
 		}
-	}
+
+		> .else {
+			margin-top: 30px;
+			padding-left: 20px;
+			> li {
+				font-size: 25px;
+				> a {
+					display: block;
+					height: 45px;
+					margin-bottom: 30px;
+					line-height: 45px;
+
+					&:hover {
+						background-color: #fdf4b1;
+					}
+
+					> span {
+						padding-left: 18px;
+					}
+				}
+			}
+		}
+	} //end of .settings
+
+	> .talkbang {
+		background-image: url(./../images/chatBg.png);
+		> nav {
+			background-color: #fff;
+			padding: 0;
+			> div {
+				display: flex;
+				justify-content: space-between;
+				width: 100%;
+				padding-right: 8px;
+				> p {
+					display: flex;
+
+					> a {
+						display: block;
+						padding-right: 5px;
+						color: #000;
+						font-size: 20px;
+					}
+					&.onlyy > a:hover {
+						color: #dcc206;
+					}
+				}
+			}
+		}
+
+		> ul {
+			height: 110vw;
+			> li {
+				> .frame {
+					display: block;
+					width: 40px;
+					height: 40px;
+					text-indent: -9999px;
+					background-size: contain;
+					background-repeat: no-repeat;
+					background-image: url(./../images/friend_cloud.jpg);
+					border-radius: 50%;
+				}
+			}
+		}
+	} //end of .talkbang
 
 	@keyframes footerAni {
 		from {

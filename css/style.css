@@ -132,13 +132,14 @@
   border-radius: 50%;
   background-color: #f00;
 }
-#wrap > .settings {
-  background-color: yellow;
+#wrap > .settings > nav {
+  padding: 0;
 }
 #wrap > .settings > nav > div {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin-right: 10px;
 }
 #wrap > .settings > nav > div > p > a {
   display: block;
@@ -150,6 +151,66 @@
 }
 #wrap > .settings > nav > div > p:first-child:hover > a {
   color: #ffd700;
+}
+#wrap > .settings > nav > div > p:last-child {
+  padding-right: 10px;
+}
+#wrap > .settings > .else {
+  margin-top: 30px;
+  padding-left: 20px;
+}
+#wrap > .settings > .else > li {
+  font-size: 25px;
+}
+#wrap > .settings > .else > li > a {
+  display: block;
+  height: 45px;
+  margin-bottom: 30px;
+  line-height: 45px;
+}
+#wrap > .settings > .else > li > a:hover {
+  background-color: #fdf4b1;
+}
+#wrap > .settings > .else > li > a > span {
+  padding-left: 18px;
+}
+#wrap > .talkbang {
+  background-image: url(./../images/chatBg.png);
+}
+#wrap > .talkbang > nav {
+  background-color: #fff;
+  padding: 0;
+}
+#wrap > .talkbang > nav > div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-right: 8px;
+}
+#wrap > .talkbang > nav > div > p {
+  display: flex;
+}
+#wrap > .talkbang > nav > div > p > a {
+  display: block;
+  padding-right: 5px;
+  color: #000;
+  font-size: 20px;
+}
+#wrap > .talkbang > nav > div > p.onlyy > a:hover {
+  color: #dcc206;
+}
+#wrap > .talkbang > ul {
+  height: 110vw;
+}
+#wrap > .talkbang > ul > li > .frame {
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-indent: -9999px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(./../images/friend_cloud.jpg);
+  border-radius: 50%;
 }
 @keyframes footerAni {
   from {
