@@ -38,6 +38,15 @@
 #wrap > header > nav > ul > li {
   font-size: 15px;
 }
+#wrap > header.talkbang {
+  position: fixed;
+  left: 50%;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  transform: translate(-50%, 0);
+  z-index: 1000;
+}
 #wrap > section {
   margin-top: 10px;
 }
@@ -174,43 +183,123 @@
 #wrap > .settings > .else > li > a > span {
   padding-left: 18px;
 }
-#wrap > .talkbang {
-  background-image: url(./../images/chatBg.png);
-}
-#wrap > .talkbang > nav {
+#wrap > section.talkbang > nav {
+  position: fixed;
+  left: 50%;
+  top: 30px;
+  width: 100%;
   background-color: #fff;
   padding: 0;
+  transform: translate(-50%, 0);
+  z-index: 1000;
 }
-#wrap > .talkbang > nav > div {
+#wrap > section.talkbang > nav > div {
   display: flex;
   justify-content: space-between;
   width: 100%;
   padding-right: 8px;
 }
-#wrap > .talkbang > nav > div > p {
+#wrap > section.talkbang > nav > div > p {
   display: flex;
 }
-#wrap > .talkbang > nav > div > p > a {
+#wrap > section.talkbang > nav > div > p > a {
   display: block;
   padding-right: 5px;
   color: #000;
   font-size: 20px;
 }
-#wrap > .talkbang > nav > div > p.onlyy > a:hover {
+#wrap > section.talkbang > nav > div > p.onlyy > a:hover {
   color: #dcc206;
 }
-#wrap > .talkbang > ul {
-  height: 110vw;
+#wrap > section.talkbang > .background {
+  position: relative;
+  height: 1500px;
+  margin-top: 90px;
+  background-image: url(./../images/chatBng.png);
+  background-size: contain;
 }
-#wrap > .talkbang > ul > li > .frame {
+#wrap > section.talkbang > .background > h3 {
+  position: absolute;
+  left: 170px;
+  top: 35px;
+  width: 155px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  box-shadow: 2px 2px 2px 2px #ccc;
+  font-weight: 500;
+  font-size: 13px;
+  background-color: #fff;
+  border-radius: 50px;
+}
+#wrap > section.talkbang > .background > ul > li > .msgbox > p {
+  width: 190px;
+  height: 50px;
+  font-size: 14px;
+  line-height: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 2px 2px #ccc;
+  background-color: #fff;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+#wrap > section.talkbang > .background > ul > li > .msgbox > .nickname {
+  position: absolute;
+  top: 240px;
+  left: 70px;
+}
+#wrap > section.talkbang > .background > ul > li > .pic {
   display: block;
   width: 40px;
   height: 40px;
   text-indent: -9999px;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-image: url(./../images/friend_cloud.jpg);
   border-radius: 50%;
+}
+#wrap > section.talkbang > .background > ul > li:first-child > div > p {
+  position: absolute;
+  left: 275px;
+  top: 100px;
+  background-color: #38bdf1;
+}
+#wrap > section.talkbang > .background > ul > li:nth-child(2) > div > p {
+  position: absolute;
+  left: 275px;
+  top: 170px;
+  background-color: #38bdf1;
+}
+#wrap > section.talkbang > .background > ul > li:nth-child(3) > div > p {
+  position: absolute;
+  left: 65px;
+  top: 260px;
+}
+#wrap > section.talkbang > .background > ul > li:nth-child(4) > div > p {
+  position: absolute;
+  left: 65px;
+  top: 330px;
+}
+#wrap > section.talkbang > .background > ul > li:nth-child(5) > div > p {
+  position: absolute;
+  left: 65px;
+  top: 400px;
+}
+#wrap > section.talkbang > .background > ul > li:nth-child(6) > div > p {
+  position: absolute;
+  left: 65px;
+  top: 470px;
+}
+#wrap > section.talkbang > .background > ul > li:nth-child(7) > div > p {
+  position: absolute;
+  left: 275px;
+  top: 570px;
+  background-color: #38bdf1;
+}
+#wrap > section.talkbang > .background > ul > li:nth-child(3) > .pic {
+  position: absolute;
+  left: 15px;
+  top: 240px;
 }
 @keyframes footerAni {
   from {
