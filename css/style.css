@@ -421,6 +421,7 @@
 }
 #wrap > .find {
   width: 100%;
+  height: 810px;
   background-color: gold;
 }
 #wrap > .find > nav {
@@ -428,10 +429,54 @@
 }
 #wrap > .find > div > ul {
   display: flex;
+  padding-top: 30px;
+  border-bottom: 2px solid #5f2a2a;
+}
+#wrap > .find > div > ul > li {
+  width: 25%;
 }
 #wrap > .find > div > ul > li > a {
   display: flex;
   flex-direction: column;
+  text-align: center;
+}
+#wrap > .find > div > ul > li > a > i {
+  font-size: 40px;
+}
+#wrap > .find > div > ul > li > a > span {
+  margin-bottom: 25px;
+  padding-top: 5px;
+}
+#wrap > .find > h3 {
+  margin: 30px 25px;
+  font-weight: normal;
+}
+#wrap > .find > div {
+  padding-bottom: 20px;
+}
+#wrap > .find > div > a {
+  display: flex;
+  height: 80px;
+  padding: 0 30px;
+  line-height: 80px;
+}
+#wrap > .find > div > a > img {
+  width: 45px;
+  height: 45px;
+  margin-top: 18px;
+  border-radius: 50%;
+}
+#wrap > .find > div > a > h3 {
+  margin-left: 30px;
+  font-weight: 500;
+  font-size: 20px;
+}
+#wrap > .find > div > a > p {
+  margin-left: 200px;
+  font-size: 20px;
+}
+#wrap > .find > div > a:hover {
+  background-color: #ac8d53;
 }
 @keyframes footerAni {
   from {
