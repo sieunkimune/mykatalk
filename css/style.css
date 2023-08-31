@@ -213,6 +213,7 @@
 }
 #wrap > section.talkbang > .background {
   position: relative;
+  width: 100%;
   height: 1500px;
   margin-top: 90px;
   background-image: url(./../images/chatBng.png);
@@ -221,7 +222,7 @@
 #wrap > section.talkbang > .background > h3 {
   position: absolute;
   left: 170px;
-  top: 35px;
+  top: 30px;
   width: 155px;
   height: 30px;
   line-height: 30px;
@@ -245,7 +246,7 @@
 }
 #wrap > section.talkbang > .background > ul > li > .msgbox > .nickname {
   position: absolute;
-  top: 240px;
+  top: 235px;
   left: 70px;
 }
 #wrap > section.talkbang > .background > ul > li > .pic {
@@ -301,6 +302,137 @@
   left: 15px;
   top: 240px;
 }
+#wrap > .besti > nav > ol > li:first-child {
+  margin-left: 50px;
+}
+#wrap > .besti > div {
+  border-bottom: 1px solid #dedede;
+}
+#wrap > .besti > div > .me {
+  width: 80px;
+  height: 80px;
+  margin: 20px;
+  background-size: contain;
+  background-image: url(./../images/my.png);
+  border-radius: 25px;
+}
+#wrap > .besti > div > .me > p {
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  padding-top: 30px;
+  padding-left: 100px;
+  font-weight: 500;
+  font-size: 20px;
+}
+#wrap > .besti > div > .me > p > span {
+  display: block;
+  width: 150px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 0.8rem;
+  border: 1px solid #000;
+  border-radius: 50px;
+  cursor: pointer;
+}
+#wrap > .besti > div.birth,
+#wrap > .besti > div.burger {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+#wrap > .besti > div.birth > h3,
+#wrap > .besti > div.burger > h3 {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-weight: normal;
+  font-size: 13px;
+}
+#wrap > .besti > div.birth > img,
+#wrap > .besti > div.burger > img {
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  border-radius: 20px;
+}
+#wrap > .besti > div.birth > p,
+#wrap > .besti > div.burger > p {
+  position: absolute;
+  left: 100px;
+  top: 50px;
+  font-weight: 500;
+  font-size: 16px;
+}
+#wrap > .besti > div > h3 {
+  margin: 25px;
+  font-weight: normal;
+  font-size: 20px;
+}
+#wrap > .besti > div > .bookmark {
+  height: 350px;
+  margin-top: 40px;
+}
+#wrap > .besti > div > .bookmark > li > a {
+  display: flex;
+  height: 65px;
+  margin: 15px 20px;
+}
+#wrap > .besti > div > .bookmark > li > a:hover {
+  background-color: #fefbe3;
+}
+#wrap > .besti > div > .bookmark > li > a > .friend > img {
+  width: 65px;
+  height: 65px;
+  border-radius: 20px;
+}
+#wrap > .besti > div > .bookmark > li > a > .info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+#wrap > .besti > div > .bookmark > li > a > .info > h3 {
+  margin-top: 8px;
+}
+#wrap > .besti > div > .bookmark > li > a > .info > p {
+  margin-top: 5px;
+  color: #9999b3;
+}
+#wrap > .besti > div > .bookmark > li > a > .talktime {
+  position: absolute;
+  right: 25px;
+  margin-top: 24px;
+  color: #9999b3;
+  font-size: 12px;
+}
+#wrap > .besti > div > .bookmark > li:nth-child(3) > a > .info {
+  display: flex;
+  flex-direction: row;
+}
+#wrap > .besti > div > .bookmark > li:nth-child(3) > a > .info > h3 {
+  margin-top: 23px;
+  margin-right: 185px;
+}
+#wrap > .besti > div > .bookmark > li:nth-child(3) > a > .info > p {
+  margin-top: 25px;
+  color: #000;
+}
+#wrap > .find {
+  width: 100%;
+  background-color: gold;
+}
+#wrap > .find > nav {
+  background-color: #fff;
+}
+#wrap > .find > div > ul {
+  display: flex;
+}
+#wrap > .find > div > ul > li > a {
+  display: flex;
+  flex-direction: column;
+}
 @keyframes footerAni {
   from {
     transform: translateY(80px);
@@ -352,6 +484,41 @@
   line-height: 17px;
   border-radius: 50%;
   background-color: #f00;
+}
+#wrap > footer.talkbang {
+  width: 100%;
+  bottom: -327px;
+  transition: all 0.5s ease-in-out;
+}
+#wrap > footer.talkbang > div {
+  width: 100%;
+  border-top: 1px solid #ccc;
+  background-color: #e2ddfc;
+}
+#wrap > footer.talkbang > div > a {
+  height: 44px;
+  padding-left: 5px;
+  line-height: 44px;
+  font-size: 17px;
+}
+#wrap > footer.talkbang > div > a:nth-child(1) {
+  padding-left: 10px;
+}
+#wrap > footer.talkbang > div > input {
+  width: 80%;
+  height: 42px;
+  margin-left: 5px;
+  line-height: 42px;
+  font-size: 17px;
+  border: none;
+  background-color: #e2ddfc;
+}
+#wrap > footer.talkbang > div > img {
+  width: 100%;
+  cursor: pointer;
+}
+#wrap > footer.talkbang:hover {
+  bottom: 0;
 }
 
 h2 {
