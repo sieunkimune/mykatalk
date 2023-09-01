@@ -427,6 +427,9 @@
 #wrap > .find > nav {
   background-color: #fff;
 }
+#wrap > .find > nav > ol > li:first-child {
+  margin-left: 50px;
+}
 #wrap > .find > div > ul {
   display: flex;
   padding-top: 30px;
@@ -477,6 +480,81 @@
 }
 #wrap > .find > div > a:hover {
   background-color: #ac8d53;
+}
+#wrap > .more > nav > ol > li:first-child {
+  margin-left: 50px;
+}
+#wrap > .more > .me > li:nth-child(1) {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+#wrap > .more > .me > li:nth-child(1) > img {
+  width: 85px;
+  height: 85px;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+#wrap > .more > .me > li:nth-child(1) > ul h3 {
+  margin-top: 17px;
+  margin-left: 10px;
+  line-height: 30px;
+  font-weight: 500;
+  font-size: 19px;
+}
+#wrap > .more > .me > li:nth-child(1) > ul p {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #727272;
+}
+#wrap > .more > .me > li:nth-child(2) {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #dedede;
+}
+#wrap > .more > .me > li:nth-child(2) > ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+}
+#wrap > .more > .me > li:nth-child(2) > ul > li > a > ul {
+  width: 100px;
+  text-align: center;
+}
+#wrap > .more > .me > li:nth-child(2) > ul > li > a > ul > li:nth-child(1) {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+#wrap > .more > .me > li:nth-child(2) > ul > li > a > ul > li:nth-child(2) {
+  font-size: 15px;
+}
+#wrap > .more > .option > li:nth-child(1) {
+  margin: 30px;
+  font-size: 15px;
+}
+#wrap > .more > .option > li:nth-child(2) > ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+}
+#wrap > .more > .option > li:nth-child(2) > ul > li > a > ul {
+  text-align: center;
+}
+#wrap > .more > .option > li:nth-child(2) > ul > li > a > ul > li {
+  color: #f56c93;
+}
+#wrap > .more > .option > li:nth-child(2) > ul > li > a > ul > li:nth-child(1) {
+  margin: 0 auto;
+  width: 70px;
+  line-height: 70px;
+  font-size: 35px;
+  border: 2px solid #f56c93;
+  border-radius: 15px;
+}
+#wrap > .more > .option > li:nth-child(2) > ul > li > a > ul > li:nth-child(2) {
+  width: 100px;
+  font-size: 15px;
+  margin-top: 10px;
 }
 @keyframes footerAni {
   from {

@@ -491,6 +491,13 @@ body {
 		background-color: gold;
 		> nav {
 			background-color: #fff;
+			> ol {
+				> li {
+					&:first-child {
+						margin-left: 50px;
+					}
+				}
+			}
 		}
 		> div {
 			> ul {
@@ -549,6 +556,113 @@ body {
 			}
 		}
 	}
+
+	> .more {
+		> nav {
+			> ol {
+				> li {
+					&:first-child {
+						margin-left: 50px;
+					}
+				}
+			}
+		}
+		> .me {
+			> li {
+				&:nth-child(1) {
+					display: flex;
+					flex-flow: row wrap;
+					padding: 20px;
+					margin-bottom: 25px;
+					> img {
+						width: 85px;
+						height: 85px;
+						border-radius: 30px;
+						margin-right: 10px;
+					}
+					> ul {
+						h3 {
+							margin-top: 17px;
+							margin-left: 10px;
+							line-height: 30px;
+							font-weight: 500;
+							font-size: 19px;
+						}
+						p {
+							margin-left: 10px;
+							font-size: 14px;
+							color: #727272;
+						}
+					}
+				}
+				&:nth-child(2) {
+					padding-bottom: 40px;
+					border-bottom: 1px solid #dedede;
+					> ul {
+						display: flex;
+						flex-flow: row nowrap;
+						justify-content: space-evenly;
+						> li {
+							> a {
+								> ul {
+									width: 100px;
+									text-align: center;
+									> li {
+										&:nth-child(1) {
+											font-size: 40px;
+											margin-bottom: 10px;
+										}
+										&:nth-child(2) {
+											font-size: 15px;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			} //end of li
+		} //end of .me
+
+		> .option {
+			> li {
+				&:nth-child(1) {
+					margin: 30px;
+					font-size: 15px;
+				}
+				&:nth-child(2) {
+					> ul {
+						display: flex;
+						flex-flow: row nowrap;
+						justify-content: space-evenly;
+						> li {
+							> a {
+								> ul {
+									text-align: center;
+									> li {
+										color: #f56c93;
+										&:nth-child(1) {
+											margin: 0 auto;
+											width: 70px;
+											line-height: 70px;
+											font-size: 35px;
+											border: 2px solid #f56c93;
+											border-radius: 15px;
+										}
+										&:nth-child(2) {
+											width: 100px;
+											font-size: 15px;
+											margin-top: 10px;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		} //end of .option
+	} //end of .more
 
 	@keyframes footerAni {
 		from {
