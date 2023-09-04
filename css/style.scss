@@ -362,32 +362,34 @@ body {
 		}
 		> div {
 			border-bottom: 1px solid #dedede;
-			> .me {
-				width: 80px;
-				height: 80px;
-				margin: 20px;
-				background-size: contain;
-				background-image: url(./../images/my.png);
-				border-radius: 25px;
-				> p {
-					display: flex;
-					justify-content: space-between;
-					width: 350px;
-					padding-top: 30px;
-					padding-left: 100px;
-					font-weight: 500;
-					font-size: 20px;
-					> span {
-						display: block;
-						width: 150px;
-						height: 35px;
-						line-height: 35px;
-						text-align: center;
-						font-weight: 400;
-						font-size: 0.8rem;
-						border: 1px solid #000;
-						border-radius: 50px;
-						cursor: pointer;
+			> a {
+				> .me {
+					width: 80px;
+					height: 80px;
+					margin: 20px;
+					background-size: contain;
+					background-image: url(./../images/my.png);
+					border-radius: 25px;
+					> p {
+						display: flex;
+						justify-content: space-between;
+						width: 350px;
+						padding-top: 30px;
+						padding-left: 100px;
+						font-weight: 500;
+						font-size: 20px;
+						> span {
+							display: block;
+							width: 150px;
+							height: 35px;
+							line-height: 35px;
+							text-align: center;
+							font-weight: 400;
+							font-size: 0.8rem;
+							border: 1px solid #000;
+							border-radius: 50px;
+							cursor: pointer;
+						}
 					}
 				}
 			}
@@ -664,6 +666,117 @@ body {
 		} //end of .option
 	} //end of .more
 
+	> .sieun {
+		position: relative;
+		width: 100%;
+		height: 858px;
+		padding-top: 20px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-image: url(./../images/bgd_02.jpg);
+		> nav {
+			> div {
+				display: flex;
+				justify-content: space-between;
+				width: 100%;
+				> {
+					p {
+						display: flex;
+						a {
+							height: 30px;
+							color: #fff;
+							font-size: 20px;
+							> i {
+								width: 30px;
+								height: 30px;
+								line-height: 30px;
+								border: 1px solid #fff;
+								border-radius: 50%;
+							}
+						}
+						&:first-child > a > i {
+							border: none;
+						}
+					}
+				}
+			}
+		}
+
+		> div {
+			> a {
+				> .me {
+					> img {
+						position: absolute;
+						left: 42%;
+						top: 68%;
+						width: 86px;
+						height: 86px;
+						border-radius: 35px;
+					}
+					> p {
+						position: absolute;
+						left: 46%;
+						top: 80%;
+						color: #fff;
+						font-size: 16px;
+					}
+				}
+
+				> p {
+					> span:nth-child(1) {
+						position: absolute;
+						left: 50px;
+						top: 100px;
+						width: 150px;
+						height: 30px;
+						line-height: 30px;
+						text-align: center;
+						color: #707070;
+						background-color: #d6d6d6;
+						border: 1px solid #d6d6d6;
+						border-radius: 30px;
+					}
+					> span:nth-child(2) {
+						position: absolute;
+						left: 35px;
+						top: 200px;
+						font-size: 20px;
+					}
+				}
+			}
+		}
+
+		> .my {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			border-top: 2px solid #ccc;
+			> ul {
+				display: flex;
+				justify-content: space-around;
+				> li {
+					height: 80px;
+					padding-top: 30px;
+
+					> a {
+						color: #fff;
+						> i {
+							font-size: 20px;
+							text-indent: 30px;
+						}
+						> span {
+							display: block;
+							padding-top: 10px;
+							font-size: 13px;
+							text-indent: 6px;
+						}
+					}
+				}
+			}
+		}
+	} //end of .sieun
+
 	@keyframes footerAni {
 		from {
 			transform: translateY(80px);
@@ -761,7 +874,6 @@ body {
 
 h2 {
 	display: none;
-
 	@media #{$pc} {
 		display: inline-block;
 		position: fixed;
