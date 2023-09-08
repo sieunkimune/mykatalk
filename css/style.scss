@@ -144,19 +144,20 @@ body {
 						margin-top: 24px;
 						color: #9999b3;
 						font-size: 12px;
-					}
-					> span {
-						position: fixed;
-						left: 91%;
-						top: 38%;
-						width: 18px;
-						height: 18px;
-						color: #fff;
-						line-height: 18px;
-						text-align: center;
-						font-size: 13px;
-						border-radius: 50%;
-						background-color: #f00;
+
+						> span {
+							position: absolute;
+							left: 60%;
+							top: 110%;
+							width: 18px;
+							height: 18px;
+							color: #fff;
+							line-height: 18px;
+							text-align: center;
+							font-size: 13px;
+							border-radius: 50%;
+							background-color: #f00;
+						}
 					}
 				} //end of a
 			} //end of li

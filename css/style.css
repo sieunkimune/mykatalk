@@ -127,10 +127,10 @@
   color: #9999b3;
   font-size: 12px;
 }
-#wrap > section > .talkroom > li > a > span {
-  position: fixed;
-  left: 91%;
-  top: 38%;
+#wrap > section > .talkroom > li > a > .talktime > span {
+  position: absolute;
+  left: 60%;
+  top: 110%;
   width: 18px;
   height: 18px;
   color: #fff;
