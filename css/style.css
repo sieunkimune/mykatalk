@@ -130,7 +130,8 @@
 #wrap > section > .talkroom > li > a > span {
   position: absolute;
   left: 50%;
-  margin-top: 45px;
+  top: 50%;
+  margin-top: -115px;
   margin-left: 197px;
   width: 18px;
   height: 18px;
